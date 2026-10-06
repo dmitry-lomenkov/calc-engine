@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic>=2
+pyswisseph
+timezonefinder
+tzdata
+psycopg[binary]
+python-dateutil
+httpx

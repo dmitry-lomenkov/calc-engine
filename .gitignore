@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# Swiss Ephemeris data files (download separately, see README)
+app/ephe/*.se1
+.env
+.env.*
