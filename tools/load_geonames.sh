@@ -9,7 +9,7 @@ U="${POSTGRES_USER:-jyotisha}"; D="${POSTGRES_DB:-jyotisha}"
 TMP=$(mktemp -d); cd "$TMP"
 DL="https://download.geonames.org/export/dump"
 for f in RU.zip admin1CodesASCII.txt admin2Codes.txt; do
-  curl -fsSL "$DL/$f" -o "$f" || curl -fsSL --proxy http://127.0.0.1:10809 "$DL/$f" -o "$f"
+  curl -fsSL "$DL/$f" -o "$f"
 done
 unzip -o RU.zip >/dev/null
 

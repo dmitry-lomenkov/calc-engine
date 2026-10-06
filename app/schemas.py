@@ -64,7 +64,7 @@ class SkyEventsInput(BaseModel):
 
 
 class GeocodeInput(BaseModel):
-    place: Optional[str] = Field(None, examples=["Бердск"])
+    place: Optional[str] = Field(None, examples=["Казань"])
     lat: Optional[float] = None
     lon: Optional[float] = None
     geoname_id: Optional[int] = None

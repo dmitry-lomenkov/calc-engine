@@ -92,7 +92,7 @@ def _fmt(row) -> dict:
 
 def resolve(place: str) -> dict:
     """Возврат: {'match': {...}} | {'candidates': [...]} | {'none': True}.
-    place может содержать квалификаторы через запятую: 'Дубровка, Маслянинский район, ...'."""
+    place может содержать квалификаторы через запятую: 'Сосновка, Вятскополянский район, ...'."""
     if not _DSN:
         return {"none": True}
     parts = [p.strip() for p in place.split(",") if p.strip()]
